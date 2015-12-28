@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="li_name_color">#000000</color>
+    <color name="li_date_color">#747474</color>
+    <color name="details_btn_see_more_txt_color">#ffffff</color>
+    <color name="details_description_color">#000000</color>
+    <color name="details_date_color">#747474</color>
+</resources>

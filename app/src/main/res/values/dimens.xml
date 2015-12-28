@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="li_country_height">100dp</dimen>
+    <dimen name="li_country_photo_height">100dp</dimen>
+    <dimen name="li_country_photo_width">150dp</dimen>
+
+    <dimen name="details_photo_height">250dp</dimen>
+    <dimen name="li_country_name_margin">10dp</dimen>
+    <dimen name="details_btn_see_more_height">55dp</dimen>
+</resources>
