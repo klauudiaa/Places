@@ -33,7 +33,7 @@ public class VolleySingleton {
 
         // Instantiate the RequestQueue with the cache and network.
         mRequestQueue = new RequestQueue(cache, network);
-        
+
 
         mImageLoader = new ImageLoader(mRequestQueue, new ImageLoader.ImageCache() {
 

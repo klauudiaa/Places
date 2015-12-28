@@ -7,5 +7,6 @@ public class Constants {
     public static final String DATE_FORMAT="yyyy-MM";
     public static final String PLACE_ID = "PLACE_ID";
     public static final String PROGRESS_BAR_STATE="PBS";
+    public static final String IS_REFRESHING=" IS_REFRESHING";
     public static final int INTERNET_STATE=100;
 }

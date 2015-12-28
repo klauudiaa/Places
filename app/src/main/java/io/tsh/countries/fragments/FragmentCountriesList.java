@@ -100,6 +100,9 @@ public class FragmentCountriesList extends Fragment
         }
         mRecyclerView.setAdapter(mAdapter);
         mSwipeRefreshLayout.setOnRefreshListener(this);
+        if(savedInstanceState != null)
+           mSwipeRefreshLayout.setRefreshing(savedInstanceState.getBoolean(Constants.IS_REFRESHING));
+
         if(isOnline(getActivity())){
             L.m("Starting download request");
             loadCountriesList();
@@ -108,6 +111,12 @@ public class FragmentCountriesList extends Fragment
            mCallback.startSettingsActivity();
         }
         return view;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(Constants.IS_REFRESHING, mSwipeRefreshLayout.isRefreshing());
     }
 
     @Override
@@ -174,6 +183,7 @@ public class FragmentCountriesList extends Fragment
 
     @Override
     public void onRefresh() {
+        mSwipeRefreshLayout.setRefreshing(true);
         if(isOnline(getActivity())) {
             loadCountriesList();
         }
